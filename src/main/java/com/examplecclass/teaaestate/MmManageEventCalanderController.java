@@ -20,7 +20,7 @@ public class MmManageEventCalanderController
 
     @javafx.fxml.FXML
     public void initialize() {
-        ecuLocationComboBox.getItems().addAll("Main Office","Sub Office","Factory");
+        ecuLocationComboBox.getItems().addAll("Main Office","Sub Office","Company","tea Department");
         ecuEventDateDatePicker.setValue(LocalDate.now());
 
     }
