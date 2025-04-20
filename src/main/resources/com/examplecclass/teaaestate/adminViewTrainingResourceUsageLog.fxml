@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.AdminViewTrainingResourceUsageLogController">
+   <children>
+      <Button layoutX="218.0" layoutY="77.0" mnemonicParsing="false" onAction="#tfUsageLogOnAction" prefHeight="26.0" prefWidth="164.0" text="View Training Usage Log" />
+      <TableView fx:id="vtrulTableView" layoutX="69.0" layoutY="155.0" prefHeight="200.0" prefWidth="462.0">
+        <columns>
+          <TableColumn fx:id="vtrulTrainerNameCol" prefWidth="87.20001220703125" text="Trainer Name" />
+          <TableColumn fx:id="vtrulResouceNameCol" prefWidth="96.79998779296875" text="Resource Name" />
+            <TableColumn fx:id="vtrulQualityCol" prefWidth="92.0" text="Quality" />
+            <TableColumn fx:id="vtrulStockRefillCol" prefWidth="71.99993896484375" text="Stock Refill" />
+            <TableColumn fx:id="vtrulDateOfSessionsCol" prefWidth="117.60003662109375" text="Date of Sessions" />
+        </columns>
+      </TableView>
+      <Label layoutX="218.0" layoutY="27.0" prefHeight="26.0" prefWidth="164.0" text="Training Resource Usage Log" />
+   </children>
+</AnchorPane>

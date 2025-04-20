@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B2AC88;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.MmViewMonthlySubGrowthController">
+   <children>
+      <TableView fx:id="msgTableView" layoutX="100.0" layoutY="128.0" prefHeight="200.0" prefWidth="430.0" style="-fx-background-color: B2AC88; -fx-border-color: black;">
+        <columns>
+          <TableColumn fx:id="msgDateCol" prefWidth="113.5999755859375" text="Date" />
+          <TableColumn fx:id="msgNewSubCol" prefWidth="161.5999755859375" text="New Sub" />
+            <TableColumn fx:id="msgUnsubCol" prefWidth="153.5999755859375" text="Unsub" />
+        </columns>
+      </TableView>
+      <Button layoutX="257.0" layoutY="66.0" mnemonicParsing="false" onAction="#msgViewButtonOnAction" prefHeight="38.0" prefWidth="97.0" style="-fx-border-color: black; -fx-background-color: light grey;" text="View" />
+      <Label layoutX="234.0" prefHeight="49.0" prefWidth="145.0" text="Monthly Subscriber Growth" />
+   </children>
+</AnchorPane>

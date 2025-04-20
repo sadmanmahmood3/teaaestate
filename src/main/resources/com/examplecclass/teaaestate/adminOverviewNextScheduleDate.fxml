@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B2AC88;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.AdminOverviewNextScheduleDateController">
+   <children>
+      <Button layoutX="192.0" layoutY="89.0" mnemonicParsing="false" onAction="#scndButtonOnAction" prefHeight="26.0" prefWidth="218.0" style="-fx-border-color: 808080;" text="View next scheduled review date" />
+      <TableView fx:id="scndTableView" layoutX="10.0" layoutY="152.0" prefHeight="200.0" prefWidth="583.0" style="-fx-background-color: B2AC88;">
+        <columns>
+          <TableColumn fx:id="scndTitleCol" prefWidth="75.0" text="Review Title" />
+          <TableColumn fx:id="scndDateCol" prefWidth="82.4000244140625" text="Review date" />
+            <TableColumn fx:id="scndSessionCol" prefWidth="108.0" text="Sesssion covered" />
+            <TableColumn fx:id="scndLocationCol" prefWidth="85.5999755859375" text="Location" />
+            <TableColumn fx:id="scndAssertedReviewerCol" prefWidth="121.60003662109375" text="Asserted Reviewer" />
+            <TableColumn fx:id="scndNotesCol" prefWidth="110.39996337890625" text="Notes" />
+        </columns>
+      </TableView>
+      <Label layoutX="228.0" layoutY="-11.0" prefHeight="79.0" prefWidth="186.0" text="Next Review Schedule" />
+   </children>
+</AnchorPane>

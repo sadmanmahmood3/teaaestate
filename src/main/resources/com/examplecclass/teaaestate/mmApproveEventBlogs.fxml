@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B2AC88;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.MmApproveEventBlogsController">
+   <children>
+      <TextField fx:id="erbBlogtitleField" layoutX="103.0" layoutY="66.0" />
+      <TextField fx:id="erbAuthorNameField" layoutX="401.0" layoutY="66.0" />
+      <TextField fx:id="erbEventNameField" layoutX="103.0" layoutY="121.0" />
+      <DatePicker fx:id="erbSubmissionDatePicker" layoutX="401.0" layoutY="121.0" />
+      <DatePicker fx:id="erbPublishDatePicker" layoutX="401.0" layoutY="174.0" />
+      <ComboBox fx:id="erbReviewStatusComboBox" layoutX="102.0" layoutY="174.0" prefWidth="150.0" />
+      <Label layoutX="307.0" layoutY="125.0" text="Submission Date" />
+      <Label layoutX="40.0" layoutY="70.0" text="Blog Title" />
+      <Label layoutX="315.0" layoutY="70.0" text="Author Name" />
+      <Label layoutX="24.0" layoutY="178.0" text="Review Status" />
+      <Label layoutX="34.0" layoutY="125.0" text="Event Name" />
+      <Label layoutX="318.0" layoutY="178.0" text="Publish Date" />
+      <Label layoutX="253.0" layoutY="30.0" text=" Event Related Blogs" />
+      <Button layoutX="240.0" layoutY="265.0" mnemonicParsing="false" onAction="#erbPublishOnAction" prefHeight="40.0" prefWidth="114.0" text="Publish" />
+      <Label fx:id="errorLabel" layoutX="461.0" layoutY="257.0" prefHeight="54.0" prefWidth="114.0" style="-fx-border-color: grey;" />
+   </children>
+</AnchorPane>

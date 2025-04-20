@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane fx:id="dashboardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.DashboardViewController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="530.0" prefWidth="215.0" style="-fx-background-color: grey; -fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#assertQualityLogsOnAction" prefHeight="26.0" prefWidth="215.0" text="Assert Quality Logs" />
+            <Button mnemonicParsing="false" onAction="#manageInternalAnnouncementOnAction" prefHeight="26.0" prefWidth="214.0" text="Manage Internal Announcement">
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#viewNextScheduledDateOnAction" prefHeight="26.0" prefWidth="215.0" text="View Next Schedule Date" />
+            <Button mnemonicParsing="false" onAction="#updateHolidaysOnAction" prefHeight="26.0" prefWidth="214.0" text="Update Holidays" />
+            <Button mnemonicParsing="false" onAction="#viewAssertedQualityLogsOnAction" prefHeight="26.0" prefWidth="214.0" text="View Asserted Quality Logs" />
+            <Button mnemonicParsing="false" onAction="#viewCostAnalysisOnAction" prefHeight="26.0" prefWidth="214.0" text="View Cost Analysis" />
+            <Button mnemonicParsing="false" onAction="#viewfinancialSessionsOnAction" prefHeight="26.0" prefWidth="215.0" text="View Financial Sessions" />
+            <Button mnemonicParsing="false" onAction="#viewTrainingResourceOnAction" prefHeight="26.0" prefWidth="214.0" text="View Training Resource Usage Logs">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#approveEventBlogsOnAction" prefHeight="26.0" prefWidth="219.0" text="Approve Event Blogs" />
+            <Button mnemonicParsing="false" onAction="#manageEventCalenderOnAction" prefHeight="26.0" prefWidth="213.0" text="Manage Event Calender" />
+            <Button mnemonicParsing="false" onAction="#proposeNewSloganOnAction" prefHeight="26.0" prefWidth="224.0" text="Propose New Slogan" />
+            <Button mnemonicParsing="false" onAction="#scheduleATaglineOnAction" prefHeight="26.0" prefWidth="218.0" text="Schedule A Tagline For Homepage" />
+            <Button mnemonicParsing="false" onAction="#submitWeeklyFunFactOnAction" prefHeight="26.0" prefWidth="213.0" text="Submit Weekly Fun Fact" />
+            <Button mnemonicParsing="false" onAction="#updateSubsGrowthOnAction" prefHeight="26.0" prefWidth="218.0" text="Update Subs Growth" />
+            <Button mnemonicParsing="false" onAction="#viewApprovedBlogsOnAction" prefHeight="26.0" prefWidth="223.0" text="View Approved Blogs" />
+            <Button mnemonicParsing="false" onAction="#viewMonthlySubsGrowthOnAction" prefHeight="26.0" prefWidth="220.0" text="View Monthly Subs Growth" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="392.0" prefWidth="462.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="36.0" layoutY="78.0" prefHeight="350.0" prefWidth="536.0" style="-fx-background-color: grey;" text="                                                                        The Dashboard" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <Label prefHeight="18.0" prefWidth="54.0" text="Label" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
