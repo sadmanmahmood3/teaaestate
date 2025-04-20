@@ -19,6 +19,9 @@ public class adminAssertQualityLogs implements Serializable {
         this.teaType = teaType;
     }
 
+    public adminAssertQualityLogs(String id, String factoryName, String shift, String teaType, LocalDate date) {
+    }
+
     public String getId() {
         return id;
     }

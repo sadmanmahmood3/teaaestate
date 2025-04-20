@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B2AC88;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.AdminTrackDailyProductionController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B2AC88;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.AdminViewFinancialSessionController">
    <children>
       <Button layoutX="192.0" layoutY="59.0" mnemonicParsing="false" onAction="#viewFinancialSessionsButtonOnAction" prefHeight="26.0" prefWidth="202.0" text="View Financial Sessions" />
       <TableView fx:id="viewFinancialSessionsTableView" layoutX="55.0" layoutY="134.0" prefHeight="200.0" prefWidth="489.0" style="-fx-background-color: B2AC88;">

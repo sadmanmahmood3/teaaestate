@@ -3,6 +3,7 @@ package com.examplecclass.teaaestate;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -27,6 +28,14 @@ public class MmViewApprovedBlogsController
 
     @javafx.fxml.FXML
     public void initialize() {
+        erbTitleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
+        erbAuthorNameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
+        erbEventNameCol.setCellValueFactory(new PropertyValueFactory<>("eventName"));
+        erbReviewCol.setCellValueFactory(new PropertyValueFactory<>("rvwStatus"));
+        erbSubDateCol.setCellValueFactory(new PropertyValueFactory<>("subDate"));
+        erbPublishDateCol.setCellValueFactory(new PropertyValueFactory<>("pubDate"));
+
+
 
 
 

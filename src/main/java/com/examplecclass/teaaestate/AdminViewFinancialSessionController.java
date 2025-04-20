@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class AdminTrackDailyProductionController
+public class AdminViewFinancialSessionController
 {
     @javafx.fxml.FXML
     private TableView viewFinancialSessionsTableView;

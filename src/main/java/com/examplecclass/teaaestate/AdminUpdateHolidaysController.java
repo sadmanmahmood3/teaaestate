@@ -3,6 +3,9 @@ package com.examplecclass.teaaestate;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.time.LocalDate;
 
@@ -60,6 +63,28 @@ public class AdminUpdateHolidaysController implements Serializable
             Alert digitfoundAlert = new Alert(Alert.AlertType.ERROR);
             digitfoundAlert.setContentText("No digits!");
             digitfoundAlert.show();}
+
+        adminUpdateHolidays uh=new adminUpdateHolidays(name,updatedBy,type,date);
+
+        try {
+            File f=new File("mmUpdateSubCount.bin");
+            FileOutputStream fos;
+            ObjectOutputStream oos;
+
+            if(f.exists()){
+                fos=new FileOutputStream(f,true);
+                oos=new AppendableObjectOutputStream(fos);
+            }  else {
+                fos=new FileOutputStream(f);
+                oos=new ObjectOutputStream(fos);
+            }
+            errorLabel.setText("Successfully Submitted");
+            oos.writeObject(uh);
+            oos.close();
+
+        } catch (Exception e){
+            e.printStackTrace();
+        }
 
 
 

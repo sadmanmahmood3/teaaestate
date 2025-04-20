@@ -6,6 +6,9 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.time.LocalDate;
 
@@ -41,6 +44,28 @@ public class AdminManageInternalAnnouncementController implements Serializable
 
         if(iaBodyField.getText().isEmpty()||iaTitleField.getText().isEmpty()){
             errorLabel.setText("Fill up the fields properly");
+        }
+
+        adminManageInternalAnnouncement mia=new adminManageInternalAnnouncement(body,title,audience,start,end);
+
+        try {
+            File f=new File("mmUpdateSubCount.bin");
+            FileOutputStream fos;
+            ObjectOutputStream oos;
+
+            if(f.exists()){
+                fos=new FileOutputStream(f,true);
+                oos=new AppendableObjectOutputStream(fos);
+            }  else {
+                fos=new FileOutputStream(f);
+                oos=new ObjectOutputStream(fos);
+            }
+            errorLabel.setText("Successfully Submitted");
+            oos.writeObject(mia);
+            oos.close();
+
+        } catch (Exception e){
+            e.printStackTrace();
         }
 
     }

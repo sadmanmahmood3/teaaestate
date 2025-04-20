@@ -3,6 +3,9 @@ package com.examplecclass.teaaestate;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 import java.time.LocalDate;
 
 public class MmProposeNewSloganController
@@ -58,6 +61,28 @@ public class MmProposeNewSloganController
             Alert digitfoundAlert = new Alert(Alert.AlertType.ERROR);
             digitfoundAlert.setContentText("No digits!");
             digitfoundAlert.show();}
+
+        mmProposeNewSlogan pns=new mmProposeNewSlogan(name,slogan,theme,date);
+
+        try {
+            File f=new File("mmApproveEventBlogs.bin");
+            FileOutputStream fos;
+            ObjectOutputStream oos;
+
+            if(f.exists()){
+                fos=new FileOutputStream(f,true);
+                oos=new AppendableObjectOutputStream(fos);
+            }  else {
+                fos=new FileOutputStream(f);
+                oos=new ObjectOutputStream(fos);
+            }
+            errorLabel.setText("Successfully Submitted");
+            oos.writeObject(pns);
+            oos.close();
+
+        } catch (Exception e){
+            e.printStackTrace();
+        }
 
     }
 }

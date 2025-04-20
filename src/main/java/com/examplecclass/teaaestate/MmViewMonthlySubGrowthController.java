@@ -22,7 +22,10 @@ public class MmViewMonthlySubGrowthController
 
     @javafx.fxml.FXML
     public void initialize() {
-        msgMonthCol.setCellValueFactory(new PropertyValueFactory<>());
+        msgNewSubCol.setCellValueFactory(new PropertyValueFactory<>("newSubs"));
+        msgUnsubCol.setCellValueFactory(new PropertyValueFactory<>("unsubs"));
+        msgDateCol.setCellValueFactory(new PropertyValueFactory<>("date"));
+
 
     }
 
