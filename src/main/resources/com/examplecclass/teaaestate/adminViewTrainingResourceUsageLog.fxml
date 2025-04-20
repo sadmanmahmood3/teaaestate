@@ -6,11 +6,10 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.AdminViewTrainingResourceUsageLogController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B2AC88;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.AdminViewTrainingResourceUsageLogController">
    <children>
       <Button layoutX="218.0" layoutY="77.0" mnemonicParsing="false" onAction="#tfUsageLogOnAction" prefHeight="26.0" prefWidth="164.0" text="View Training Usage Log" />
-      <TableView fx:id="vtrulTableView" layoutX="69.0" layoutY="155.0" prefHeight="200.0" prefWidth="462.0">
+      <TableView fx:id="vtrulTableView" layoutX="69.0" layoutY="155.0" prefHeight="200.0" prefWidth="462.0" style="-fx-background-color: B2AC88;">
         <columns>
           <TableColumn fx:id="vtrulTrainerNameCol" prefWidth="87.20001220703125" text="Trainer Name" />
           <TableColumn fx:id="vtrulResouceNameCol" prefWidth="96.79998779296875" text="Resource Name" />

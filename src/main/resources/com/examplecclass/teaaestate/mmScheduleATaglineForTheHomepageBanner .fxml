@@ -21,5 +21,6 @@
       <Label layoutX="310.0" layoutY="88.0" text="Start Date" />
       <Label layoutX="247.0" layoutY="25.0" text="Tagline For The Homepage" />
       <Button layoutX="252.0" layoutY="267.0" mnemonicParsing="false" onAction="#tfthProceedOnAction" prefHeight="43.0" prefWidth="134.0" text="Proceed" />
+      <Label fx:id="errorLabel" layoutX="269.0" layoutY="218.0" prefHeight="34.0" prefWidth="94.0" style="-fx-border-color: grey;" />
    </children>
 </AnchorPane>
