@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="410.0" prefWidth="600.0" style="-fx-background-color: B2AC88;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.FcEnterMonthlyBudgetAllocationController">
+    <children>
+        <DatePicker fx:id="mbaPeriodDatePicker" layoutX="406.0" layoutY="60.0" />
+        <TextField fx:id="mbaRawMaterialstextfield" layoutX="139.0" layoutY="29.0" />
+        <TextField fx:id="mbaLabourtextfield" layoutX="139.0" layoutY="73.0" />
+        <TextField fx:id="mbaTransporttextfield" layoutX="139.0" layoutY="115.0" />
+        <TextField fx:id="mbaSubmittedtextfield" layoutX="139.0" layoutY="200.0" />
+        <Label layoutX="15.0" layoutY="33.0" text="Raw materials Budget" />
+        <Label layoutX="6.0" layoutY="76.0" prefHeight="18.0" prefWidth="88.0" text=" Labour Budget" />
+        <Label layoutX="8.0" layoutY="119.0" prefHeight="18.0" prefWidth="109.0" text=" Transport Budget" />
+        <Label layoutX="14.0" layoutY="204.0" text="Submitted by" />
+        <Label layoutX="360.0" layoutY="64.0" text="Period" />
+        <Button layoutX="171.0" layoutY="282.0" mnemonicParsing="false" onAction="#mbaAllocateButtonOnAction" prefHeight="26.0" prefWidth="235.0" text="Allocate" />
+        <Label fx:id="allertLabel" layoutX="360.0" layoutY="137.0" prefHeight="98.0" prefWidth="188.0" style="-fx-border-color: gray;" />
+    </children>
+</AnchorPane>
