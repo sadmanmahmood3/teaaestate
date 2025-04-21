@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B2AC88;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.FcPublishCostAnalysisController">
+    <children>
+        <TextField fx:id="caLabourCosttextfield" layoutX="89.0" layoutY="65.0" />
+        <TextField fx:id="caPackingCosttextfield" layoutX="437.0" layoutY="27.0" />
+        <TextField fx:id="caTransportCosttextfield" layoutX="438.0" layoutY="65.0" />
+        <DatePicker fx:id="caDateCADatePicker" layoutX="76.0" layoutY="105.0" />
+        <Label layoutX="21.0" layoutY="31.0" text="Tea Type" />
+        <Label layoutX="11.0" layoutY="69.0" text="Laboure Cost" />
+        <Label layoutX="14.0" layoutY="109.0" text="Date CA" />
+        <Label layoutX="350.0" layoutY="31.0" text="Packing Cost " />
+        <Label layoutX="350.0" layoutY="69.0" text="Transport Cost" />
+        <Button layoutX="176.0" layoutY="221.0" mnemonicParsing="false" onAction="#publishcostanalysisOnAction" prefHeight="26.0" prefWidth="261.0" text="Publish Cost Analysis" />
+        <ComboBox fx:id="caTeaTypeComboBox" layoutX="81.0" layoutY="27.0" prefWidth="150.0" />
+        <Label fx:id="alerLabel" layoutX="424.0" layoutY="150.0" prefHeight="43.0" prefWidth="138.0" style="-fx-border-color: gray;" />
+    </children>
+</AnchorPane>
+
