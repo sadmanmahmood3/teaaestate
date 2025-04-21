@@ -29,7 +29,7 @@ public class AdminManageInternalAnnouncementController implements Serializable
 
     @javafx.fxml.FXML
     public void initialize() {
-        iaAudienceComboBox.getItems().addAll("All","Facilitator","Media");
+        iaAudienceComboBox.getItems().addAll("All","Facilitator","Media Team");
         iaStartDatePicker.setValue(LocalDate.now());
         iaEndDatePicker.setValue(LocalDate.now());
     }
