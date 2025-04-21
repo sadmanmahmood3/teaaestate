@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B2AC88;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.FcViewFinancialSessionsController">
+    <children>
+        <Button layoutX="155.0" layoutY="76.0" mnemonicParsing="false" onAction="#viewFinancialSessionsButtonOnAction" prefHeight="26.0" prefWidth="290.0" text="View" />
+        <TableView fx:id="viewFinancialSessionsTableView" layoutX="72.0" layoutY="161.0" prefHeight="200.0" prefWidth="494.0">
+            <columns>
+                <TableColumn fx:id="viewDateTableColumn" prefWidth="75.0" text="Date" />
+                <TableColumn fx:id="viewTeaTypeTableColumn" prefWidth="75.0" text="Tea Type " />
+                <TableColumn fx:id="viewLeafReceivedTbleColumn" prefWidth="136.0" text=" Leaf received (kg)" />
+                <TableColumn fx:id="viewTeaProducedTableColumn" prefWidth="108.800048828125" text="Tea produced(kg)" />
+                <TableColumn fx:id="viewTotalCostTableColumn" prefWidth="97.60001220703123" text="Total cost" />
+            </columns>
+        </TableView>
+        <Label layoutX="244.0" layoutY="14.0" prefHeight="26.0" prefWidth="112.0" text="Financial Sessions" />
+    </children>
+</AnchorPane>
+
