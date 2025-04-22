@@ -8,17 +8,18 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
+import java.time.LocalDate;
 
 public class MmViewMonthlySubGrowthController
 {
     @javafx.fxml.FXML
-    private TableColumn msgUnsubCol;
+    private TableColumn<mmUpdateSubCount,Integer> msgUnsubCol;
     @javafx.fxml.FXML
-    private TableView msgTableView;
+    private TableView<mmUpdateSubCount> msgTableView;
     @javafx.fxml.FXML
-    private TableColumn msgNewSubCol;
+    private TableColumn<mmUpdateSubCount,Integer> msgNewSubCol;
     @javafx.fxml.FXML
-    private TableColumn msgDateCol;
+    private TableColumn<mmUpdateSubCount, LocalDate> msgDateCol;
 
     @javafx.fxml.FXML
     public void initialize() {

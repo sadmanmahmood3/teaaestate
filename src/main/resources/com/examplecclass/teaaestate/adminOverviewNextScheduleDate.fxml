@@ -11,12 +11,11 @@
       <Button layoutX="192.0" layoutY="89.0" mnemonicParsing="false" onAction="#scndButtonOnAction" prefHeight="26.0" prefWidth="218.0" style="-fx-border-color: 808080;" text="View next scheduled review date" />
       <TableView fx:id="scndTableView" layoutX="10.0" layoutY="152.0" prefHeight="200.0" prefWidth="583.0" style="-fx-background-color: B2AC88;">
         <columns>
-          <TableColumn fx:id="scndTitleCol" prefWidth="75.0" text="Review Title" />
-          <TableColumn fx:id="scndDateCol" prefWidth="82.4000244140625" text="Review date" />
-            <TableColumn fx:id="scndSessionCol" prefWidth="108.0" text="Sesssion covered" />
-            <TableColumn fx:id="scndLocationCol" prefWidth="85.5999755859375" text="Location" />
-            <TableColumn fx:id="scndAssertedReviewerCol" prefWidth="121.60003662109375" text="Asserted Reviewer" />
-            <TableColumn fx:id="scndNotesCol" prefWidth="110.39996337890625" text="Notes" />
+          <TableColumn fx:id="scndTitleCol" prefWidth="94.39996147155762" text="Review Title" />
+          <TableColumn fx:id="scndDateCol" prefWidth="106.40009307861328" text="Review date" />
+            <TableColumn fx:id="scndSessionCol" prefWidth="114.39996337890625" text="Sesssion covered" />
+            <TableColumn fx:id="scndLocationCol" prefWidth="114.4000244140625" text="Location" />
+            <TableColumn fx:id="scndAssertedReviewerCol" prefWidth="157.59994506835938" text="Asserted Reviewer" />
         </columns>
       </TableView>
       <Label layoutX="228.0" layoutY="-11.0" prefHeight="79.0" prefWidth="186.0" text="Next Review Schedule" />

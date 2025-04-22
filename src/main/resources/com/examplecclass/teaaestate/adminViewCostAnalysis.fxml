@@ -10,14 +10,11 @@
       <Button layoutX="311.0" layoutY="38.0" mnemonicParsing="false" onAction="#viewCostAnalysisButtonOnAction" text="View Cost Analysis" />
       <TableView fx:id="viewCostAnalysisTableView" layoutX="25.0" layoutY="110.0" prefHeight="262.0" prefWidth="686.0" style="-fx-background-color: B2AC88;">
         <columns>
-          <TableColumn fx:id="caDateCol" prefWidth="62.400028228759766" text="Date" />
-          <TableColumn fx:id="caTeaTypeCol" prefWidth="75.199951171875" text="Tea Type" />
-            <TableColumn fx:id="caLabourCostCol" prefWidth="87.99993896484375" text="Labour Cost" />
-            <TableColumn fx:id="caElectricityCostCol" prefWidth="98.40000915527344" text="Electricity Cost" />
-            <TableColumn fx:id="caFuelCostCol" prefWidth="59.20001220703125" text="Fuel Cost" />
-            <TableColumn fx:id="caPackagingCostCol" prefWidth="98.4000244140625" text="Packaging Cost" />
-            <TableColumn fx:id="caTransportCostCol" prefWidth="94.4000244140625" text="Transport Cost" />
-            <TableColumn fx:id="caTotalCostCol" prefWidth="102.4000244140625" text="Total Cost" />
+          <TableColumn fx:id="caDateCol" prefWidth="104.00000381469727" text="Date" />
+          <TableColumn fx:id="caTeaTypeCol" prefWidth="107.20001220703125" text="Tea Type" />
+            <TableColumn fx:id="caLabourCostCol" prefWidth="129.59996032714844" text="Labour Cost" />
+            <TableColumn fx:id="caPackagingCostCol" prefWidth="161.5999755859375" text="Packaging Cost" />
+            <TableColumn fx:id="caTransportCostCol" prefWidth="188.79998779296875" text="Transport Cost" />
         </columns>
       </TableView>
    </children>

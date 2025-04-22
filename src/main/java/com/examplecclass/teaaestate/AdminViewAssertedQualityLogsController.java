@@ -3,28 +3,35 @@ package com.examplecclass.teaaestate;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
+import java.time.LocalDate;
 
 public class AdminViewAssertedQualityLogsController
 {
     @javafx.fxml.FXML
-    private TableColumn qaDateCol;
+    private TableColumn<adminAssertQualityLogs, LocalDate> qaDateCol;
     @javafx.fxml.FXML
-    private TableColumn qaFactoryNameCol;
+    private TableColumn<adminAssertQualityLogs,String> qaFactoryNameCol;
     @javafx.fxml.FXML
-    private TableColumn qaBatchIDCol;
+    private TableColumn<adminAssertQualityLogs,String> qaBatchIDCol;
     @javafx.fxml.FXML
-    private TableView qualityLogsTableView;
+    private TableView<adminAssertQualityLogs> qualityLogsTableView;
     @javafx.fxml.FXML
-    private TableColumn qaShiftCol;
+    private TableColumn<adminAssertQualityLogs,String> qaShiftCol;
     @javafx.fxml.FXML
-    private TableColumn qaTeaTypeCol;
+    private TableColumn<adminAssertQualityLogs,String> qaTeaTypeCol;
 
     @javafx.fxml.FXML
     public void initialize() {
+        qaBatchIDCol.setCellValueFactory(new PropertyValueFactory<>("id"));
+        qaFactoryNameCol.setCellValueFactory(new PropertyValueFactory<>("factoryName"));
+        qaShiftCol.setCellValueFactory(new PropertyValueFactory<>("shift"));
+        qaTeaTypeCol.setCellValueFactory(new PropertyValueFactory<>("teaType"));
+        qaDateCol.setCellValueFactory(new PropertyValueFactory<>("date"));
 
     }
 

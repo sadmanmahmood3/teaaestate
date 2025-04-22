@@ -8,23 +8,24 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
+import java.time.LocalDate;
 
 public class MmViewApprovedBlogsController
 {
     @javafx.fxml.FXML
-    private TableColumn erbPublishDateCol;
+    private TableColumn<mmApproveEventBlogs, LocalDate> erbPublishDateCol;
     @javafx.fxml.FXML
-    private TableColumn erbSubDateCol;
+    private TableColumn<mmApproveEventBlogs, LocalDate> erbSubDateCol;
     @javafx.fxml.FXML
-    private TableColumn erbAuthorNameCol;
+    private TableColumn<mmApproveEventBlogs,String> erbAuthorNameCol;
     @javafx.fxml.FXML
-    private TableColumn erbTitleCol;
+    private TableColumn<mmApproveEventBlogs,String> erbTitleCol;
     @javafx.fxml.FXML
-    private TableView erbTableView;
+    private TableView<mmApproveEventBlogs> erbTableView;
     @javafx.fxml.FXML
-    private TableColumn erbReviewCol;
+    private TableColumn<mmApproveEventBlogs,String> erbReviewCol;
     @javafx.fxml.FXML
-    private TableColumn erbEventNameCol;
+    private TableColumn<mmApproveEventBlogs,String> erbEventNameCol;
 
     @javafx.fxml.FXML
     public void initialize() {
