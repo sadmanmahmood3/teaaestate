@@ -15,8 +15,7 @@
                 <TableColumn fx:id="scndAssignedReviewerCol" prefWidth="122.40003204345703" text="Assigned Reviewer" />
                 <TableColumn fx:id="scndReviewDateCol" prefWidth="96.79998779296875" text="Review Date" />
                 <TableColumn fx:id="scndSessionPeriodCoveredCol" prefWidth="162.4000244140625" text="Session Period Covered" />
-                <TableColumn fx:id="scndLocationCol" prefWidth="75.19998168945312" text="Location" />
-                <TableColumn fx:id="scndNotesCol" prefWidth="78.39996337890625" text="Notes" />
+                <TableColumn fx:id="scndLocationCol" prefWidth="149.5999816894531" text="Location" />
             </columns>
         </TableView>
         <Label layoutX="248.0" layoutY="14.0" prefHeight="34.0" prefWidth="177.0" text="Next Review Schedule" />

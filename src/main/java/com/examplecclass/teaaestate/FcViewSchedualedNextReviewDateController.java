@@ -3,30 +3,35 @@ package com.examplecclass.teaaestate;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
+import java.time.LocalDate;
 
 public class FcViewSchedualedNextReviewDateController
 {
     @javafx.fxml.FXML
-    private TableColumn scndReviewDateCol;
+    private TableColumn<fcScdleNxtRvwDt, LocalDate> scndReviewDateCol;
     @javafx.fxml.FXML
-    private TableColumn scndReviewTitleCol;
+    private TableColumn<fcScdleNxtRvwDt,String> scndReviewTitleCol;
     @javafx.fxml.FXML
-    private TableColumn scndAssignedReviewerCol;
+    private TableColumn<fcScdleNxtRvwDt,String> scndAssignedReviewerCol;
     @javafx.fxml.FXML
-    private TableColumn scndSessionPeriodCoveredCol;
+    private TableColumn<fcScdleNxtRvwDt,String> scndSessionPeriodCoveredCol;
     @javafx.fxml.FXML
-    private TableColumn scndLocationCol;
+    private TableColumn<fcScdleNxtRvwDt,String> scndLocationCol;
     @javafx.fxml.FXML
-    private TableColumn scndNotesCol;
-    @javafx.fxml.FXML
-    private TableView scndTableView;
+    private TableView<fcScdleNxtRvwDt> scndTableView;
 
     @javafx.fxml.FXML
     public void initialize() {
+        scndAssignedReviewerCol.setCellValueFactory(new PropertyValueFactory<>("rvwr"));
+        scndSessionPeriodCoveredCol.setCellValueFactory(new PropertyValueFactory<>("sessnprdcr"));
+        scndLocationCol.setCellValueFactory(new PropertyValueFactory<>("location"));
+        scndReviewTitleCol.setCellValueFactory(new PropertyValueFactory<>("rvwrtitl"));
+        scndReviewDateCol.setCellValueFactory(new PropertyValueFactory<>("rvwrdate"));
     }
 
     @javafx.fxml.FXML

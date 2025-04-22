@@ -11,14 +11,12 @@
         <Button layoutX="155.0" layoutY="76.0" mnemonicParsing="false" onAction="#viewFinancialSessionsButtonOnAction" prefHeight="26.0" prefWidth="290.0" text="View" />
         <TableView fx:id="viewFinancialSessionsTableView" layoutX="72.0" layoutY="161.0" prefHeight="200.0" prefWidth="494.0">
             <columns>
-                <TableColumn fx:id="viewDateTableColumn" prefWidth="75.0" text="Date" />
-                <TableColumn fx:id="viewTeaTypeTableColumn" prefWidth="75.0" text="Tea Type " />
-                <TableColumn fx:id="viewLeafReceivedTbleColumn" prefWidth="136.0" text=" Leaf received (kg)" />
-                <TableColumn fx:id="viewTeaProducedTableColumn" prefWidth="108.800048828125" text="Tea produced(kg)" />
-                <TableColumn fx:id="viewTotalCostTableColumn" prefWidth="97.60001220703123" text="Total cost" />
+                <TableColumn fx:id="viewDateTableColumn" prefWidth="104.0" text="Date" />
+                <TableColumn fx:id="viewTeaTypeTableColumn" prefWidth="76.0" text="Tea Type " />
+                <TableColumn fx:id="viewLeafReceivedTbleColumn" prefWidth="151.199951171875" text=" Leaf received (kg)" />
+                <TableColumn fx:id="viewTeaProducedTableColumn" prefWidth="163.20001220703125" text="Tea produced(kg)" />
             </columns>
         </TableView>
         <Label layoutX="244.0" layoutY="14.0" prefHeight="26.0" prefWidth="112.0" text="Financial Sessions" />
     </children>
 </AnchorPane>
-

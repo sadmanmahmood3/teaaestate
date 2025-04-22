@@ -3,28 +3,32 @@ package com.examplecclass.teaaestate;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
+import java.time.LocalDate;
 
 public class FcViewFinancialSessionsController
 {
     @javafx.fxml.FXML
-    private TableColumn viewDateTableColumn;
+    private TableColumn<fcPubFinancialSessions, LocalDate> viewDateTableColumn;
     @javafx.fxml.FXML
-    private TableView viewFinancialSessionsTableView;
+    private TableView<fcPubFinancialSessions> viewFinancialSessionsTableView;
     @javafx.fxml.FXML
-    private TableColumn viewTeaProducedTableColumn;
+    private TableColumn<fcPubFinancialSessions,Integer> viewTeaProducedTableColumn;
     @javafx.fxml.FXML
-    private TableColumn viewTeaTypeTableColumn;
+    private TableColumn<fcPubFinancialSessions,String> viewTeaTypeTableColumn;
     @javafx.fxml.FXML
-    private TableColumn viewTotalCostTableColumn;
-    @javafx.fxml.FXML
-    private TableColumn viewLeafReceivedTbleColumn;
+    private TableColumn<fcPubFinancialSessions,Integer> viewLeafReceivedTbleColumn;
 
     @javafx.fxml.FXML
     public void initialize() {
+        viewTeaTypeTableColumn.setCellValueFactory(new PropertyValueFactory<>("teatype"));
+        viewLeafReceivedTbleColumn.setCellValueFactory(new PropertyValueFactory<>("lfreceived"));
+        viewTeaProducedTableColumn.setCellValueFactory(new PropertyValueFactory<>("lfproduced"));
+        viewDateTableColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
     }
 
     @javafx.fxml.FXML
