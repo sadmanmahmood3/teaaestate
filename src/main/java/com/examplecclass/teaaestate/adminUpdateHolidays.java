@@ -17,6 +17,9 @@ public class adminUpdateHolidays implements Serializable {
         this.date = date;
     }
 
+    public adminUpdateHolidays(String name, String nid, String mobile, String mail, String password, LocalDate date) {
+    }
+
     public LocalDate getDate() {
         return date;
     }
