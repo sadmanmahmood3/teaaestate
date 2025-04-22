@@ -11,13 +11,10 @@
         <TableView fx:id="viewCostAnalysisTableView" layoutX="7.0" layoutY="258.0" prefHeight="200.0" prefWidth="670.0">
             <columns>
                 <TableColumn fx:id="caDateCol" prefWidth="75.0" text="Date" />
-                <TableColumn fx:id="caTeaTypeCol" prefWidth="75.0" text="Tea Type" />
-                <TableColumn fx:id="caLabourCostCol" prefWidth="117.59999084472656" text="Laboure Cost" />
-                <TableColumn fx:id="caElectricityCostCol" prefWidth="95.20001220703125" text="Electricity Cost" />
-                <TableColumn fx:id="caFuelCostCol" prefWidth="57.60003662109375" text="Fuel Cost" />
-                <TableColumn fx:id="caPackingCostCol" prefWidth="80.800048828125" text="Packing Cost" />
-                <TableColumn fx:id="caTransportCostCol" prefWidth="96.800048828125" text="Transport Cost" />
-                <TableColumn fx:id="caTotalCostCol" prefWidth="71.20001220703125" text="Total Cost" />
+                <TableColumn fx:id="caTeaTypeCol" prefWidth="131.20001220703125" text="Tea Type" />
+                <TableColumn fx:id="caLabourCostCol" prefWidth="141.59999084472656" text="Laboure Cost" />
+                <TableColumn fx:id="caPackingCostCol" prefWidth="93.60003662109375" text="Packing Cost" />
+                <TableColumn fx:id="caTransportCostCol" prefWidth="228.7999267578125" text="Transport Cost" />
             </columns>
         </TableView>
     </children>
