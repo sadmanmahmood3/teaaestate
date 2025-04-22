@@ -3,28 +3,32 @@ package com.examplecclass.teaaestate;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
+import java.time.LocalDate;
 
 public class TfViewTrainingResourceUsageLogController
 {
     @javafx.fxml.FXML
-    private TableColumn vtrulResourceNameCol;
+    private TableColumn<tfResourceUsage,String> vtrulResourceNameCol;
     @javafx.fxml.FXML
-    private TableColumn vtrulTrainerNameCol;
+    private TableColumn<tfResourceUsage,String> vtrulTrainerNameCol;
     @javafx.fxml.FXML
-    private TableColumn vtrulDateOfSessionsCol;
+    private TableColumn<tfResourceUsage, LocalDate> vtrulDateOfSessionsCol;
     @javafx.fxml.FXML
-    private TableColumn vtrulQualityCol;
+    private TableColumn<tfResourceUsage,Integer> vtrulQualityCol;
     @javafx.fxml.FXML
-    private TableView vtrulTableView;
-    @javafx.fxml.FXML
-    private TableColumn vtrulStockRefillCol;
+    private TableView<tfResourceUsage> vtrulTableView;
 
     @javafx.fxml.FXML
     public void initialize() {
+        vtrulTrainerNameCol.setCellValueFactory(new PropertyValueFactory<>("trnername"));
+        vtrulResourceNameCol.setCellValueFactory(new PropertyValueFactory<>("resourcename"));
+        vtrulQualityCol.setCellValueFactory(new PropertyValueFactory<>("quantity"));
+        vtrulDateOfSessionsCol.setCellValueFactory(new PropertyValueFactory<>("sessndate"));
     }
 
     @javafx.fxml.FXML

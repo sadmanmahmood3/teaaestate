@@ -12,10 +12,9 @@
         <TableView fx:id="vtrulTableView" layoutX="14.0" layoutY="245.0" prefHeight="200.0" prefWidth="667.0">
             <columns>
                 <TableColumn fx:id="vtrulTrainerNameCol" prefWidth="122.39999103546143" text="Trainer Name" />
-                <TableColumn fx:id="vtrulResourceNameCol" prefWidth="100.0" text="Resource Name" />
-                <TableColumn fx:id="vtrulQualityCol" prefWidth="124.00001525878906" text="Quality" />
-                <TableColumn fx:id="vtrulStockRefillCol" prefWidth="173.60003662109375" text="Stock Refill" />
-                <TableColumn fx:id="vtrulDateOfSessionsCol" prefWidth="147.99993896484375" text="Date Of Sessions" />
+                <TableColumn fx:id="vtrulResourceNameCol" prefWidth="171.2000274658203" text="Resource Name" />
+                <TableColumn fx:id="vtrulQualityCol" prefWidth="126.39996337890625" text="Quality" />
+                <TableColumn fx:id="vtrulDateOfSessionsCol" prefWidth="244.0" text="Date Of Sessions" />
             </columns>
         </TableView>
         <Button layoutX="219.0" layoutY="89.0" mnemonicParsing="false" onAction="#tfUsageLogOnAction" prefHeight="26.0" prefWidth="238.0" text=" View Training Resource Usage Log" />
