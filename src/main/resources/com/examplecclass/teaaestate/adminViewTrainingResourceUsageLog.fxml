@@ -11,11 +11,10 @@
       <Button layoutX="218.0" layoutY="77.0" mnemonicParsing="false" onAction="#tfUsageLogOnAction" prefHeight="26.0" prefWidth="164.0" text="View Training Usage Log" />
       <TableView fx:id="vtrulTableView" layoutX="69.0" layoutY="155.0" prefHeight="200.0" prefWidth="462.0" style="-fx-background-color: B2AC88;">
         <columns>
-          <TableColumn fx:id="vtrulTrainerNameCol" prefWidth="87.20001220703125" text="Trainer Name" />
-          <TableColumn fx:id="vtrulResouceNameCol" prefWidth="96.79998779296875" text="Resource Name" />
-            <TableColumn fx:id="vtrulQualityCol" prefWidth="92.0" text="Quality" />
-            <TableColumn fx:id="vtrulStockRefillCol" prefWidth="71.99993896484375" text="Stock Refill" />
-            <TableColumn fx:id="vtrulDateOfSessionsCol" prefWidth="117.60003662109375" text="Date of Sessions" />
+          <TableColumn fx:id="vtrulTrainerNameCol" prefWidth="100.80005645751953" text="Trainer Name" />
+          <TableColumn fx:id="vtrulResouceNameCol" prefWidth="107.199951171875" text="Resource Name" />
+            <TableColumn fx:id="vtrulQualityCol" prefWidth="109.5999755859375" text="Quantity" />
+            <TableColumn fx:id="vtrulDateOfSessionsCol" prefWidth="144.79995727539062" text="Date of Sessions" />
         </columns>
       </TableView>
       <Label layoutX="218.0" layoutY="27.0" prefHeight="26.0" prefWidth="164.0" text="Training Resource Usage Log" />
