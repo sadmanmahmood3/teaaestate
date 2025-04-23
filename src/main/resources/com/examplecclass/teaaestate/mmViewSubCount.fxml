@@ -15,7 +15,7 @@
             <TableColumn fx:id="msgUnsubCol" prefWidth="153.5999755859375" text="Unsub" />
         </columns>
       </TableView>
-      <Button layoutX="257.0" layoutY="66.0" mnemonicParsing="false" onAction="#msgViewButtonOnAction" prefHeight="38.0" prefWidth="97.0" style="-fx-border-color: black; -fx-background-color: light grey;" text="View" />
-      <Label layoutX="234.0" prefHeight="49.0" prefWidth="145.0" text="Monthly Subscriber Growth" />
+      <Button layoutX="257.0" layoutY="66.0" mnemonicParsing="false" onAction="#msgViewButtonOnAction" prefHeight="38.0" prefWidth="97.0" text="View" />
+      <Label layoutX="234.0" prefHeight="49.0" prefWidth="145.0" text="Monthly Subscriber Count" />
    </children>
 </AnchorPane>

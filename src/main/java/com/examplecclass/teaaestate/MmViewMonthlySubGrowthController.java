@@ -26,6 +26,8 @@ public class MmViewMonthlySubGrowthController
         msgNewSubCol.setCellValueFactory(new PropertyValueFactory<>("newSubs"));
         msgUnsubCol.setCellValueFactory(new PropertyValueFactory<>("unsubs"));
         msgDateCol.setCellValueFactory(new PropertyValueFactory<>("date"));
+        //private int newSubs,unsubs;
+        //    private LocalDate date;
 
 
     }

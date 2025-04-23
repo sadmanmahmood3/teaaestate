@@ -55,7 +55,7 @@ public class AdminAssertQualityLogsController implements Serializable
         adminAssertQualityLogs aql=new adminAssertQualityLogs(id,factoryName,shift,teaType,date);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("adminAssertQualityLogs.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

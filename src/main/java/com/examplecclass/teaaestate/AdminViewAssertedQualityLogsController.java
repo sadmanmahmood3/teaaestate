@@ -32,6 +32,9 @@ public class AdminViewAssertedQualityLogsController
         qaShiftCol.setCellValueFactory(new PropertyValueFactory<>("shift"));
         qaTeaTypeCol.setCellValueFactory(new PropertyValueFactory<>("teaType"));
         qaDateCol.setCellValueFactory(new PropertyValueFactory<>("date"));
+        //private String id;
+        //    private String factoryName,shift,teaType;
+        //    private LocalDate date;
 
     }
 
