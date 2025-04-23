@@ -6,9 +6,10 @@ import javafx.scene.control.*;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class TfMonitorTrainingCompletionController
+public class TfMonitorTrainingCompletionController implements Serializable
 {
     @javafx.fxml.FXML
     private DatePicker mtcDateDatePicker;
@@ -77,7 +78,7 @@ public class TfMonitorTrainingCompletionController
         tfMonitorCompletion mc=new tfMonitorCompletion(trningsession,cmptnstatus,wrkrname,wrkrid,date);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("tfMonitorCompletion.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

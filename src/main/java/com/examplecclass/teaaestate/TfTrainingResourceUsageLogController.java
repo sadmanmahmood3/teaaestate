@@ -6,9 +6,10 @@ import javafx.scene.control.*;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class TfTrainingResourceUsageLogController
+public class TfTrainingResourceUsageLogController implements Serializable
 {
     @javafx.fxml.FXML
     private TextField trulQualitytextfield;
@@ -71,7 +72,7 @@ public class TfTrainingResourceUsageLogController
         tfResourceUsage i=new tfResourceUsage(trnername,resourcename,quantity,sessndate);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("tfResourceUsage.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

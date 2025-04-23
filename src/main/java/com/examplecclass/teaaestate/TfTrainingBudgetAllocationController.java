@@ -8,8 +8,9 @@ import javafx.scene.control.TextField;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
-public class TfTrainingBudgetAllocationController
+public class TfTrainingBudgetAllocationController implements Serializable
 {
     @javafx.fxml.FXML
     private TextField tbaVenuetextfield;
@@ -141,7 +142,7 @@ public class TfTrainingBudgetAllocationController
         tfBudgetAllocation ba=new tfBudgetAllocation(trningprgmname,prtcpnt,trnerfee,mtrlcost,venuecost,rfrshmts);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("tfBudgetAllocation.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

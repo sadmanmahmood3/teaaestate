@@ -6,9 +6,10 @@ import javafx.scene.control.*;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class TfTrainerPerformanceEvaluationController
+public class TfTrainerPerformanceEvaluationController implements Serializable
 {
     @javafx.fxml.FXML
     private ComboBox<String> tpeDelivaryQualityRatingComboBox;
@@ -76,7 +77,7 @@ public class TfTrainerPerformanceEvaluationController
         tfTrainerEvaluation te=new tfTrainerEvaluation(trnername,evlutorname,dlryrqultyrting,timeatngmnt,trningdate);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("tfTrainerEvaluation.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

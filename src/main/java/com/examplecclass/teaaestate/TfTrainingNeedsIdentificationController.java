@@ -6,9 +6,10 @@ import javafx.scene.control.*;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class TfTrainingNeedsIdentificationController
+public class TfTrainingNeedsIdentificationController implements Serializable
 {
     @javafx.fxml.FXML
     private DatePicker tniRequestdateDatePicker;
@@ -82,7 +83,7 @@ public class TfTrainingNeedsIdentificationController
         tfNeedsIdentification n=new tfNeedsIdentification(rqstby,dprtmnt,prorty,trningtopicnd,sgstedprcpnt,rqstdate);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("tfNeedsIdentification.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

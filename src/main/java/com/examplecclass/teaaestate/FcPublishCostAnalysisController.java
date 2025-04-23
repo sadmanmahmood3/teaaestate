@@ -6,9 +6,10 @@ import javafx.scene.control.*;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class FcPublishCostAnalysisController
+public class FcPublishCostAnalysisController implements Serializable
 {
     @javafx.fxml.FXML
     private ComboBox<String> caTeaTypeComboBox;
@@ -89,7 +90,7 @@ public class FcPublishCostAnalysisController
         fcCostAnalysis pca=new fcCostAnalysis(teatype,lbrCost,pkingCost,tptCost,date);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("fcCostAnalysis.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

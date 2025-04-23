@@ -6,9 +6,10 @@ import javafx.scene.control.*;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class TfScheduleTrainingSessionsController
+public class TfScheduleTrainingSessionsController implements Serializable
 {
     @javafx.fxml.FXML
     private ComboBox<String> stsLocationComboBox;
@@ -94,7 +95,7 @@ public class TfScheduleTrainingSessionsController
         tfScheduleSessions sts=new tfScheduleSessions(trningctgry,location,trningtitl,trnername,mxprtcpnt,trningdate);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("tfScheduleSessions.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 
