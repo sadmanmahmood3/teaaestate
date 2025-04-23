@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.controllers.LegalNoticeController">
+    <children>
+        <Text layoutX="350" layoutY="30" style="-fx-font-size: 20;" text="Legal Notice Management" />
+        
+        <Label layoutX="50" layoutY="70" text="Select Template:" />
+        <ComboBox fx:id="templateComboBox" layoutX="150" layoutY="70" prefWidth="200" />
+        
+        <TextArea fx:id="noticePreview" layoutX="50" layoutY="110" prefHeight="200" prefWidth="700" wrapText="true" />
+        
+        <Button layoutX="50" layoutY="320" onAction="#saveDraft" text="Save Draft" />
+        <Button layoutX="150" layoutY="320" onAction="#sendNotice" text="Send Notice" />
+        <Button layoutX="650" layoutY="320" onAction="#backToDashboard" text="Back to Dashboard" />
+        
+        <TableView fx:id="noticeTable" layoutX="50" layoutY="370" prefHeight="200" prefWidth="700">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="50" text="ID" />
+                <TableColumn fx:id="dateColumn" prefWidth="100" text="Date" />
+                <TableColumn fx:id="templateColumn" prefWidth="150" text="Template" />
+                <TableColumn fx:id="noticeStatusColumn" prefWidth="100" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane> 

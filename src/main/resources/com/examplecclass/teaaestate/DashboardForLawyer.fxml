@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.controllers.DashboardForLawyerController">
+    <children>
+        <Text layoutX="350" layoutY="30" style="-fx-font-size: 20;" text="Lawyer Dashboard" />
+        <Label fx:id="welcomeLabel" layoutX="350" layoutY="70" />
+        
+        <Label layoutX="50" layoutY="120" style="-fx-font-size: 16; -fx-font-weight: bold;" text="KKTA Policies and Legal Requirements" />
+        <Label layoutX="50" layoutY="150" text="1. Anti-Corruption Policy" />
+        <Label layoutX="50" layoutY="180" text="2. Transparency Guidelines" />
+        <Label layoutX="50" layoutY="210" text="3. Ethical Conduct Standards" />
+        
+        <Label layoutX="50" layoutY="260" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Operational Metrics" />
+        <Label fx:id="memberCountLabel" layoutX="50" layoutY="290" text="Total Members: 0" />
+        <Label fx:id="ongoingCasesLabel" layoutX="50" layoutY="320" text="Ongoing Cases: 0" />
+        <Label fx:id="resolvedCasesLabel" layoutX="50" layoutY="350" text="Resolved Cases: 0" />
+        <Label fx:id="successRateLabel" layoutX="50" layoutY="380" text="Success Rate: 0%" />
+        
+        <Button layoutX="50" layoutY="430" onAction="#showLegalNotices" text="Draft Legal Notices" />
+        <Button layoutX="200" layoutY="430" onAction="#showCompliance" text="Review Legal Compliance" />
+        <Button layoutX="350" layoutY="430" onAction="#showExpenseAnalysis" text="Analyze Expenses" />
+        <Button layoutX="650" layoutY="30" onAction="#logout" text="Logout" />
+    </children>
+</AnchorPane> 
