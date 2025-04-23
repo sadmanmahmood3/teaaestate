@@ -1,8 +1,9 @@
 package com.examplecclass.teaaestate;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class fcPubFinancialSessions {
+public class fcPubFinancialSessions implements Serializable {
     private String teatype;
     private int lfreceived, lfproduced;
     private LocalDate date;

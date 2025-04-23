@@ -1,6 +1,8 @@
 package com.examplecclass.teaaestate;
 
-public class tfBudgetAllocation {
+import java.io.Serializable;
+
+public class tfBudgetAllocation implements Serializable {
     private String trningprgmname;
     private int prtcpnt, trnerfee,mtrlcost,venuecost,rfrshmts;
 

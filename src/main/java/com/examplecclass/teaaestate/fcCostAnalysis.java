@@ -1,8 +1,9 @@
 package com.examplecclass.teaaestate;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class fcCostAnalysis {
+public class fcCostAnalysis implements Serializable {
     private String teatype;
     private Integer lbrCost,pkingCost,tptCost;
     private LocalDate date;

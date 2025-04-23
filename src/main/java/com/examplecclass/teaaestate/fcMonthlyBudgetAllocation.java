@@ -1,8 +1,9 @@
 package com.examplecclass.teaaestate;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class fcMonthlyBudgetAllocation {
+public class fcMonthlyBudgetAllocation implements Serializable {
     private int rmBudget,lbrBudget,tptBudget;
     private String submittedBy;
     private LocalDate period;

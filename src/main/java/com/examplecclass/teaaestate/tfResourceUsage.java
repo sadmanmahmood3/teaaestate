@@ -1,8 +1,9 @@
 package com.examplecclass.teaaestate;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class tfResourceUsage {
+public class tfResourceUsage implements Serializable {
     private String trnername, resourcename;
     private int quantity;
     private LocalDate sessndate;

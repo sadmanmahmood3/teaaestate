@@ -1,8 +1,9 @@
 package com.examplecclass.teaaestate;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class mmScheduleATaglineForTheHomepageBanner {
+public class mmScheduleATaglineForTheHomepageBanner implements Serializable {
 
     private String tagline,priority,status;
     private LocalDate start,end;

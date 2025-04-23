@@ -1,8 +1,9 @@
 package com.examplecclass.teaaestate;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class fcRcdCapExRqst {
+public class fcRcdCapExRqst implements Serializable {
     private String apprvl,dprtmt,prty,supplr,rqstby;
     private int rqstID;
     private LocalDate expdate;

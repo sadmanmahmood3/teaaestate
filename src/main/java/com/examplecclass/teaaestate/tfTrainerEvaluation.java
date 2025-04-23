@@ -1,8 +1,9 @@
 package com.examplecclass.teaaestate;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class tfTrainerEvaluation {
+public class tfTrainerEvaluation implements Serializable {
     private String trnername, evlutorname, dlryqultyrting, timeatngmnt;
     private LocalDate trningdate;
 
