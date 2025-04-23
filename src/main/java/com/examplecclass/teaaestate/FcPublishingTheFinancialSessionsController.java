@@ -71,7 +71,7 @@ public class FcPublishingTheFinancialSessionsController
         fcPubFinancialSessions pfs=new fcPubFinancialSessions(teatype,lfreceived,lfproduced,date);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("fcPubFinancialSessions.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

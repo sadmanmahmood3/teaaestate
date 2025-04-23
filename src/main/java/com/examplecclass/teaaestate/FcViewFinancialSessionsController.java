@@ -29,6 +29,7 @@ public class FcViewFinancialSessionsController
         viewLeafReceivedTbleColumn.setCellValueFactory(new PropertyValueFactory<>("lfreceived"));
         viewTeaProducedTableColumn.setCellValueFactory(new PropertyValueFactory<>("lfproduced"));
         viewDateTableColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
+
     }
 
     @javafx.fxml.FXML

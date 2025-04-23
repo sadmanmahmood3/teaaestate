@@ -1,8 +1,9 @@
 package com.examplecclass.teaaestate;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class tfNeedsIdentification {
+public class tfNeedsIdentification implements Serializable {
     private String rqstby, dprtmnt, prorty,trningtopicnd,sgstedprcpnt;
     private LocalDate rqstdate;
 

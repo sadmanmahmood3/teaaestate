@@ -1,8 +1,9 @@
 package com.examplecclass.teaaestate;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class fcScdleNxtRvwDt {
+public class fcScdleNxtRvwDt implements Serializable {
     private String rvwr, sessnprdcr,location,rvwrtitl;
     private LocalDate rvwrdate;
 

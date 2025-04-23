@@ -1,8 +1,9 @@
 package com.examplecclass.teaaestate;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class tfMonitorCompletion {
+public class tfMonitorCompletion implements Serializable {
     private String trningsession, cmptnstatus, wrkrname;
     private Integer wrkrid;
     private LocalDate date;

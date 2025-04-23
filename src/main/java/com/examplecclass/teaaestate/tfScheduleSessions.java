@@ -1,8 +1,9 @@
 package com.examplecclass.teaaestate;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class tfScheduleSessions {
+public class tfScheduleSessions implements Serializable {
     private String trningctgry,location, trningtitl, trnername;
     private int mxprtcpnt;
     private LocalDate trningdate;

@@ -1,6 +1,8 @@
 package com.examplecclass.teaaestate;
 
-public class tfAssignment {
+import java.io.Serializable;
+
+public class tfAssignment implements Serializable {
     private String trnername;
     private String location;
     private String trningdays;
