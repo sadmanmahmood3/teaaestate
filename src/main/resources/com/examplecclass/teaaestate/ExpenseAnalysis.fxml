@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.controllers.ExpenseAnalysisController">
+    <children>
+        <Text layoutX="350" layoutY="30" style="-fx-font-size: 20;" text="Expense Analysis" />
+        
+        <TableView fx:id="expenseTable" layoutX="50" layoutY="70" prefHeight="200" prefWidth="700">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="50" text="ID" />
+                <TableColumn fx:id="dateColumn" prefWidth="100" text="Date" />
+                <TableColumn fx:id="categoryColumn" prefWidth="150" text="Category" />
+                <TableColumn fx:id="amountColumn" prefWidth="100" text="Amount" />
+            </columns>
+        </TableView>
+        
+        <Label fx:id="totalExpensesLabel" layoutX="50" layoutY="290" style="-fx-font-size: 14;" text="Total Expenses: $0.00" />
+        <Label fx:id="averageExpenseLabel" layoutX="50" layoutY="320" style="-fx-font-size: 14;" text="Average Expense: $0.00" />
+        
+        <Button layoutX="650" layoutY="480" onAction="#backToDashboard" text="Back to Dashboard" />
+    </children>
+</AnchorPane> 

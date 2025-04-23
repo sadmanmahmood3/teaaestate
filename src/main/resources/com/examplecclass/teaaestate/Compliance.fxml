@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.controllers.ComplianceController">
+    <children>
+        <Text layoutX="350" layoutY="30" style="-fx-font-size: 20;" text="Policy Compliance Review" />
+        
+        <TableView fx:id="policyTable" layoutX="50" layoutY="70" prefHeight="200" prefWidth="700">
+            <columns>
+                <TableColumn fx:id="policyIdColumn" prefWidth="50" text="ID" />
+                <TableColumn fx:id="policyNameColumn" prefWidth="200" text="Policy Name" />
+                <TableColumn fx:id="policyStatusColumn" prefWidth="150" text="Compliance Status" />
+                <TableColumn fx:id="lastReviewColumn" prefWidth="100" text="Last Review" />
+            </columns>
+        </TableView>
+        
+        <Label layoutX="50" layoutY="290" style="-fx-font-weight: bold;" text="Selected Policy Details:" />
+        <TextArea fx:id="policyDetails" layoutX="50" layoutY="320" prefHeight="100" prefWidth="700" wrapText="true" />
+        
+        <Label layoutX="50" layoutY="440" text="Update Status:" />
+        <ComboBox fx:id="statusComboBox" layoutX="150" layoutY="440" prefWidth="150" />
+        
+        <Button layoutX="50" layoutY="480" onAction="#updateComplianceStatus" text="Update Status" />
+        <Button layoutX="650" layoutY="480" onAction="#backToDashboard" text="Back to Dashboard" />
+    </children>
+</AnchorPane> 
