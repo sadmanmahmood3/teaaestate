@@ -6,9 +6,10 @@ import javafx.scene.control.*;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class FcRecordCapitalExpenditureRequestController
+public class FcRecordCapitalExpenditureRequestController implements Serializable
 {
     @javafx.fxml.FXML
     private DatePicker capexExpectedDatePicker;

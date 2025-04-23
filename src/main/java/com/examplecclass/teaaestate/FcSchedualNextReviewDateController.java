@@ -6,9 +6,10 @@ import javafx.scene.control.*;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class FcSchedualNextReviewDateController
+public class FcSchedualNextReviewDateController implements Serializable
 {
     @javafx.fxml.FXML
     private TextField scndTitletextfield;
@@ -68,7 +69,7 @@ public class FcSchedualNextReviewDateController
         fcScdleNxtRvwDt snr=new fcScdleNxtRvwDt(rvwr,sessnprdcr,location,rvwrtitl,rvwrdate);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("fcScdleNxtRvwDt.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

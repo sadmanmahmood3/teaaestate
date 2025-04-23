@@ -9,9 +9,10 @@ import javafx.scene.control.TextField;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class FcEnterMonthlyBudgetAllocationController
+public class FcEnterMonthlyBudgetAllocationController implements Serializable
 {
     @javafx.fxml.FXML
     private Label allertLabel;

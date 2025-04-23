@@ -7,8 +7,9 @@ import javafx.scene.control.Label;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
-public class TfTrainerAssignmentController
+public class TfTrainerAssignmentController implements Serializable
 {
     @javafx.fxml.FXML
     private ComboBox<String> taPreferredTrainingDaysComboBox;
@@ -40,7 +41,7 @@ public class TfTrainerAssignmentController
         tfAssignment ac=new tfAssignment(trnername,location,trningdays,timeslots);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("tfAssignment.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 
