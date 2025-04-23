@@ -65,7 +65,7 @@ public class MmProposeNewSloganController
         mmProposeNewSlogan pns=new mmProposeNewSlogan(name,slogan,theme,date);
 
         try {
-            File f=new File("mmApproveEventBlogs.bin");
+            File f=new File("mmProposeNewSlogan.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

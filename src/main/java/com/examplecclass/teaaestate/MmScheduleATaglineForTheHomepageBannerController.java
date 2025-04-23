@@ -48,7 +48,7 @@ public class MmScheduleATaglineForTheHomepageBannerController
         mmScheduleATaglineForTheHomepageBanner shb=new mmScheduleATaglineForTheHomepageBanner(tagline,priority,status,start,end);
 
         try {
-            File f=new File("mmSubmitWeeklyFunFact.bin");
+            File f=new File("mmScheduleATaglineForTheHomepageBanner.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

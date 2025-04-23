@@ -68,7 +68,7 @@ public class MmManageEventCalanderController
         mmManageEventCalender mec=new mmManageEventCalender(title,name,location,date);
 
         try {
-            File f=new File("mmApproveEventBlogs.bin");
+            File f=new File("mmManageEventCalender.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 
