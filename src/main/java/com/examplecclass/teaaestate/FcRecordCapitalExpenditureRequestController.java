@@ -98,7 +98,7 @@ public class FcRecordCapitalExpenditureRequestController
         fcRcdCapExRqst rce=new fcRcdCapExRqst(apprvl,dprtmt,prty,supplr,rqstby,rqstiD,expdate);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("fcRcdCapExRqst.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

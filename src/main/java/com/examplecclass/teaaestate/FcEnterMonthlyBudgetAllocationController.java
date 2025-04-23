@@ -96,7 +96,7 @@ public class FcEnterMonthlyBudgetAllocationController
         fcMonthlyBudgetAllocation msg=new fcMonthlyBudgetAllocation(rmBudget,lbrBudget,tptBudget,submittedBy,period);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("fcMonthlyBudgetAllocation.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

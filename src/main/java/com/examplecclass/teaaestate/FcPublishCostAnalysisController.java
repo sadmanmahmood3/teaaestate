@@ -89,7 +89,7 @@ public class FcPublishCostAnalysisController
         fcCostAnalysis pca=new fcCostAnalysis(teatype,lbrCost,pkingCost,tptCost,date);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("fcCostAnalysis.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

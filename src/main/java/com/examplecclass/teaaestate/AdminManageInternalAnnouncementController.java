@@ -49,7 +49,7 @@ public class AdminManageInternalAnnouncementController implements Serializable
         adminManageInternalAnnouncement mia=new adminManageInternalAnnouncement(body,title,audience,start,end);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("adminManageInternalAnnouncement.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 

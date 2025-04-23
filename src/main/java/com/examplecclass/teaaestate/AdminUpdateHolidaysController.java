@@ -67,7 +67,7 @@ public class AdminUpdateHolidaysController implements Serializable
         adminUpdateHolidays uh=new adminUpdateHolidays(name,updatedBy,type,date);
 
         try {
-            File f=new File("mmUpdateSubCount.bin");
+            File f=new File("adminUpdateHolidays.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 
