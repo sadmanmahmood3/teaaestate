@@ -1,42 +1,98 @@
 package com.examplecclass.teaaestate;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.layout.BorderPane;
 
 public class AdminDashboardController
 {
     @javafx.fxml.FXML
+    private BorderPane dashBoardBorderPane;
+
+    @javafx.fxml.FXML
     public void initialize() {
+    }
+
+
+
+    @javafx.fxml.FXML
+    public void internalAnnouncementOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("adminManageInternalAnnouncement.fxml"));
+            dashBoardBorderPane.setCenter(fxmlLoader.load());
+        }
+        catch(Exception e){}
+    }
+
+    @javafx.fxml.FXML
+    public void updateHolidayOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("adminUpdateHolidays.fxml"));
+            dashBoardBorderPane.setCenter(fxmlLoader.load());
+        }
+        catch(Exception e){}
+    }
+
+    @javafx.fxml.FXML
+    public void viewNextReviewOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("adminOverviewNextScheduleDate.fxml"));
+            dashBoardBorderPane.setCenter(fxmlLoader.load());
+        }
+        catch(Exception e){}
     }
 
     @javafx.fxml.FXML
     public void viewQualityOnAction(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void nextReviewOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("adminViewAssertedQualityLogs.fxml"));
+            dashBoardBorderPane.setCenter(fxmlLoader.load());
+        }
+        catch(Exception e){}
     }
 
     @javafx.fxml.FXML
     public void assertQualityOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("adminAssertQualityLogs.fxml"));
+            dashBoardBorderPane.setCenter(fxmlLoader.load());
+        }
+        catch(Exception e){}
     }
 
     @javafx.fxml.FXML
-    public void trainingresourceOnAction(ActionEvent actionEvent) {
+    public void viewTrainingUsageLogsOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("adminViewTrainingResourceUsageLog.fxml"));
+            dashBoardBorderPane.setCenter(fxmlLoader.load());
+        }
+        catch(Exception e){}
     }
 
     @javafx.fxml.FXML
-    public void costOnAction(ActionEvent actionEvent) {
+    public void viewCostAnalysisOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("adminViewCostAnalysis.fxml"));
+            dashBoardBorderPane.setCenter(fxmlLoader.load());
+        }
+        catch(Exception e){}
     }
 
     @javafx.fxml.FXML
-    public void InternalAnnouncementOnAction(ActionEvent actionEvent) {
+    public void viewFinancialSesOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("adminViewFinancialSession.fxml"));
+            dashBoardBorderPane.setCenter(fxmlLoader.load());
+        }
+        catch(Exception e){}
     }
 
     @javafx.fxml.FXML
-    public void financialOnAction(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void holidayOnAction(ActionEvent actionEvent) {
+    public void backtoLoginOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("userLogIn.fxml"));
+            dashBoardBorderPane.setCenter(fxmlLoader.load());
+        }
+        catch(Exception e){}
     }
 }
