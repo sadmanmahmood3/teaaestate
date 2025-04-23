@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane fx:id="financialControllerBorderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examplecclass.teaaestate.FinancialControllerDashboardController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <VBox prefHeight="400.0" prefWidth="158.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#subCostAnalysisOnAction" prefHeight="26.0" prefWidth="161.0" text="Submit Cost Analysis" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#subBudgetAllocationOnAction" prefHeight="26.0" prefWidth="162.0" text="Submit budget allocation" />
+            <Button layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#publishfinancialSesOnAction" prefHeight="26.0" prefWidth="158.0" text="Publish financial session" />
+            <Button layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#recordCapitalExpOnAction" prefHeight="26.0" prefWidth="168.0" text="Record capital exp request" />
+            <Button layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#scheduleNextReviewOnAction" prefHeight="26.0" prefWidth="162.0" text="Schedule next review date" />
+            <Button layoutX="10.0" layoutY="112.0" mnemonicParsing="false" onAction="#viewCostAnalysisOnAction" prefHeight="26.0" prefWidth="157.0" text="View cost analysis" />
+            <Button layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#viewFinancialSessionOnAction" prefHeight="26.0" prefWidth="160.0" text="View financial session" />
+            <Button layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#viewNextReviewOnAcion" prefHeight="26.0" prefWidth="162.0" text="View next review date" />
+            <Button layoutX="10.0" layoutY="195.0" mnemonicParsing="false" onAction="#backToLogInOnAction" prefHeight="26.0" prefWidth="162.0" text="Back to log in" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
